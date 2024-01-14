@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIENDA</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+             <img class="logo" src="./IMAGENES/gratis-png-logotipo-de-gucci-logotipo-de-gucci-de-moda-logotipo-de-gucci-thumbnail.png" alt="gucci"> 
+            <input type="checkbox" name="" id="menu"/>
+            <label for="menu">
+                <img src="./IMAGENES/menu.png" class="menu-icono" alt="imagen menu">
+            </label>
+        <!--creamos nuestro navegador-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#producto">Producto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!--Comenzamos con la parte del carrito-->
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="./IMAGENES/car.svg"id="img-carrito" alt="imagen carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#"id="vaciar-carrito"class="btn-2">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div id="inicio" class="header-content container">
+            <div class="header-img">
+                <img src="./IMAGENES/right.png" alt="imagen de modelo">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Estrena las mejores Prendas</p>
+                <a href="#"class="btn-1">Informacion</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Comenzamos una seccion nueva-->
+    <section id="servicio" class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="./IMAGENES/f1.png" alt="cinturon">
+            </div>
+            <div class="ofert-txt">
+                <h3>Cinturon Gucci</h3>
+                <a href="#" class="btn-2">U$$ 200</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="./IMAGENES/f2.png" alt="zapatilla">
+            </div>
+            <div class="ofert-txt">
+                <h3>zapatillas Gucci</h3>
+                <a href="#" class="btn-2">U$$ 1000</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="./IMAGENES/f3.png" alt="bolso">
+            </div>
+            <div class="ofert-txt">
+                <h3>bolso gucci</h3>
+                <a href="#" class="btn-2">U$$ 3000</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Creamos la seccion de los productos es el contenido principal de mi pagina-->
+   <section id="producto">
+
+    <main  class="product container" id="lista-1">
+        <h2>Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="./IMAGENES/1.png" alt="camisa">
+                <div class="product-txt">
+                    <h3>Camisa Wrangler</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">U$$ 200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./IMAGENES/2.png" alt="campera">
+                <div class="product-txt">
+                    <h3>Campera Polo</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">U$$ 500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./IMAGENES/3.png" alt="camisa">
+                <div class="product-txt">
+                    <h3>Saco Guess</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">U$$ 1300</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./IMAGENES/4.png" alt="camisa">
+                <div class="product-txt">
+                    <h3>Camisa Lee</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">U$$ 400</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./IMAGENES/5.png" alt="camisa">
+                <div class="product-txt">
+                    <h3>Camisa Versace</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">U$$ 700</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./IMAGENES/6.png" alt="Campera">
+                <div class="product-txt">
+                    <h3>Campera Gucci</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">U$$ 200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+   </section>
+    <!--Seccion nueva de icons-->
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="./IMAGENES/i1.svg" alt="percha">
+            </div>
+            <div class="icon-txt">
+                <h3>Lavar a Mano con agua Fria</h3>
+                <p>No utilizar blanqueador. Secar colgado en una percha.
+                   Lava a máquina en agua fría. Seca al aire para mantener 
+                   la calidad de las fibras. Planchar a baja temperatura 
+                   si es necesario. Sigue las indicaciones de cuidado para 
+                   garantizar la durabilidad de tu prenda.
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="./IMAGENES/i2.svg" alt="percha">
+            </div>
+            <div class="icon-txt">
+                <h3>Planchar con cuidado</h3>
+                <p>Ajusta la plancha a una temperatura baja o media. 
+                   Consulta la etiqueta de cuidado de la prenda para 
+                   obtener orientación sobre la temperatura correcta.
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="./IMAGENES/i3.svg" alt="percha">
+            </div>
+            <div class="icon-txt">
+                <h3>Colgar con cuidado</h3>
+                <p>
+                    No cuelgues suéteres o prendas de punto 
+                    directamente en perchas, ya que pueden perder 
+                    su forma. Utiliza perchas acolchadas o dobla estas 
+                    prendas y colócalas en estantes
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Creamos otra seccion que va contener el blog-->
+    <section class="blog container">
+
+        <div class="blog-1">
+            <img src="./IMAGENES/b1.jpg" alt="blog">
+            <h3>Ropa con actitud: Descubre tu estilo único</h3>
+            <P>
+               ¡Bienvenidos a nuestro blog de moda, donde la tendencia se encuentra con la comodidad y el estilo! 
+               Sumérgete en el fascinante mundo de la moda mientras exploras nuestras últimas incorporaciones: remeras, 
+               cintos y buzos que harán que tu guardarropa destaque con elegancia y originalidad.
+               Descubre la perfecta fusión entre moda y confort con nuestra colección de remeras. Desde estilos 
+               clásicos hasta diseños vanguardistas, cada prenda ha sido seleccionada con atención a los detalles y 
+               confeccionada con los mejores materiales. Ya sea que busques una apariencia casual para el día a día 
+               o un toque chic para una ocasión especial, nuestras remeras te permitirán expresar tu estilo de manera 
+               única.
+               Acentúa tu estilo y resalta tu figura con nuestra exquisita selección de cintos. Desde los clásicos y 
+               atemporales hasta los más modernos y llamativos, encontrarás el accesorio perfecto para completar tu look. 
+               Nuestros cintos no solo son un elemento funcional, sino también una declaración de moda que elevará tu 
+               conjunto a otro nivel.
+               Cuando la comodidad se encuentra con la moda, nace nuestra colección de buzos. Confeccionados con telas 
+               suaves y diseños contemporáneos, nuestros buzos te brindarán un estilo relajado pero a la moda. 
+               Desde estampados llamativos hasta tonos clásicos, encontrarás el buz o perfecto para mantenerte 
+               abrigado con elegancia.
+               En nuestro blog, te mantenemos actualizado sobre las últimas tendencias, consejos de estilo y combinaciones
+               creativas. Explora nuestras publicaciones para inspirarte, descubrir cómo combinar tus prendas favoritas 
+               y estar al tanto de las últimas novedades en el mundo de la moda.
+
+            </P>
+
+        </div><div class="blog-1">
+            <img src="./IMAGENES/b2.jpg" alt="blog">
+            <h3>Moda en evolución, explorando las tendencias del momento</h3>
+            <P>
+                Sumérgete en un mundo de estilo y sofisticación mientras exploras nuestra amplia gama de prendas 
+                cuidadosamente seleccionadas. Desde camisas que fusionan la comodidad con la vanguardia de la moda 
+                hasta camperas de cuero que son la personificación del estilo atemporal, nuestro catálogo refleja 
+                la diversidad de gustos y personalidades de nuestros clientes.
+                Nuestra pasión por la moda no solo se refleja en la calidad excepcional de nuestras prendas, 
+                sino también en la diversidad de estilos que ofrecemos. ¿Buscas algo clásico y versátil? 
+                Nuestras camisas son la opción perfecta para cualquier ocasión, ya sea una reunión de negocios o una 
+                salida casual con amigos. ¿Prefieres un toque de rebeldía y elegancia? Descubre nuestra exclusiva 
+                colección de camperas de cuero, diseñadas para aquellos que buscan destacar con audacia.
+                creemos que la moda es una forma de expresión personal. Por ello, nos esforzamos por brindarte opciones 
+                que se adapten a tu estilo de vida y resalten tu individualidad. Explora nuestro blog para obtener 
+                consejos de moda, combinaciones únicas y las últimas noticias sobre tendencias para mantenerte siempre 
+                un paso adelante en el juego de la moda.
+                Nuestra misión va más allá de ofrecerte ropa de alta calidad; queremos ser tu fuente de inspiración 
+                para crear looks únicos que reflejen quién eres. Únete a nuestra comunidad de amantes de la moda y 
+                descubre cómo la ropa puede ser mucho más que simplemente prendas: es una forma de arte, una expresión 
+                de tu personalidad y un medio para destacar en cualquier ocasión.  
+            </P>
+        </div>
+
+    </div><div class="blog-1">
+        <img src="./IMAGENES/b3.jpg" alt="blog">
+        <h3>Últimas Tendencias y Consejos de Estilo</h3>
+        <P>
+            Descubre nuestra colección de ropa formal que te hará destacar en cualquier ocasión especial. 
+            Desde trajes impecables hasta vestidos sofisticados, cada prenda ha sido cuidadosamente seleccionada 
+            para reflejar la elegancia y la clase. Nuestros diseñadores se esfuerzan por crear piezas que no solo 
+            te hagan lucir bien, sino que también te hagan sentir seguro y poderoso en cada paso que das.
+            Para esos días relajados pero con estilo, contamos con una variedad de prendas informales que 
+            fusionan moda y comodidad. Desde jeans y camisetas modernas hasta vestidos casuales, nuestra 
+            colección informal te permite expresar tu personalidad sin sacrificar el confort. Te ofrecemos 
+            opciones que son perfectas para el día a día, permitiéndote mantenerte a la moda sin esfuerzo.
+            Entendemos que la moda es una forma de expresión personal, y es por eso que ofrecemos una amplia 
+            variedad de estilos para adaptarnos a cada gusto y preferencia. Ya sea que te inclines hacia lo 
+            clásico y atemporal o prefieras seguir las últimas tendencias, nuestra tienda tiene algo para todos.
+            Nos comprometemos a ofrecer productos de la más alta calidad. Cada prenda en nuestra tienda ha sido 
+            seleccionada cuidadosamente por su artesanía excepcional, tejidos cómodos y durabilidad. Queremos que te 
+            sientas bien tanto con tu apariencia como con la inversión que haces en tu guardarropa.
+            Mantente al tanto de las últimas tendencias de la moda y recibe valiosos consejos de estilo en nuestro blog. 
+            Actualizamos regularmente nuestra sección de blogs con artículos informativos sobre cómo combinar prendas, 
+            consejos de moda y sugerencias para crear looks únicos.
+
+        </P>
+    </div>
+    </section>
+
+    <!--Creamos el footer lo que seria el pie de nuestra pagina-->
+   
+       <section id="contacto">
+        <footer id="contacto" class="footer">
+            <div class="footer-content container">
+               
+                <div class="link">
+                    <ul>
+                        <li><a href="#"><h3>Marcas</h3></a></li>
+                        <li><a href="#DBR">DBR</a></li>
+                        <li><a href="#GUESS">GUESS</a></li>
+                        <li><a href="#LEE">LEE</a></li>
+                        <li><a href="#WRANGLE">WRANGELR</a></li>
+                        <li><a href="#ADIDAS">ADIDAS</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <ul>
+                        <li><a href="#"><h3>Redes</h3></a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Istagram</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </footer>
+    
+       </section>
+   
+    
+    <script src="script.js"></script>   
+</body>
+</html>
